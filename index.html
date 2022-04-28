@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>treino de js</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Analizador de números</h1>
+        <h4>Exercício de JavaScript</h4>
+      </header>
+
+      <section>
+        <div class="data">
+          <p class="notice">Insira números de 1 a 100</p>
+          <input id="input" type="number" />
+
+          <button
+            id="add"
+            class="btn"
+            name="add"
+            type="submit"
+            value="Add"
+            onclick="add()"
+          >
+            Add
+          </button>
+
+          <select id="insertedNum" name="insertedNum" size="6"></select>
+
+          <div class="btnLast">
+            <button
+              id="analyse"
+              class="btn"
+              name="analyse"
+              type="submit"
+              value="Analyze"
+              onclick="analyse()"
+            >
+              Analyze
+            </button>
+            <button
+              id="clear"
+              class="btn"
+              type="reset"
+              name="clear"
+              value="Clear"
+              onclick="window.location.reload()"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+
+        <div id="display"></div>
+      </section>
+
+      <footer>
+        <p class="footer">&copy; Exercício do Guanabara</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
